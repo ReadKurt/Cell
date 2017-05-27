@@ -3,5 +3,5 @@ project(Cell)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp BTree.h Utils.h)
 add_executable(Cell ${SOURCE_FILES})
