@@ -1,15 +1,17 @@
 #include <iostream>
-#include "Utils.h"
+#include "BSTree.h"
 
-void add(int x ,int y, int *p){
-    for(int i = 0; i < 100000000; i++ );
-    *p = x + y;
-}
+using  namespace std;
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    Utils utils;
-    int p;
-    utils.Runtime(add,1,2,&p);
-    std::cout << p << std::endl;
+
+    BSTree<int> bsTree{8,6,9,5,7,3};
+
+    cout << bsTree.size();
+    bsTree.preOrder();
+
+    bsTree.remove(5);
+    cout << bsTree.size();
+    bsTree.preOrder();
     return 0;
 }
