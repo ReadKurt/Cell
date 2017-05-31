@@ -80,7 +80,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/root/ClionProjects/Cell/BTree.h">
+		<Unit filename="C:/Users/root/ClionProjects/Cell/BSTree.h">
+			<Option target="Cell"/>
+		</Unit>
+		<Unit filename="C:/Users/root/ClionProjects/Cell/BinHeap.h">
+			<Option target="Cell"/>
+		</Unit>
+		<Unit filename="C:/Users/root/ClionProjects/Cell/BinTree.h">
+			<Option target="Cell"/>
+		</Unit>
+		<Unit filename="C:/Users/root/ClionProjects/Cell/Heap.h">
+			<Option target="Cell"/>
+		</Unit>
+		<Unit filename="C:/Users/root/ClionProjects/Cell/STL/SimpleVector.h">
+			<Option target="Cell"/>
+		</Unit>
+		<Unit filename="C:/Users/root/ClionProjects/Cell/STL/Tuple.h">
 			<Option target="Cell"/>
 		</Unit>
 		<Unit filename="C:/Users/root/ClionProjects/Cell/Utils.h">

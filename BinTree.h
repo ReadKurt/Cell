@@ -6,12 +6,10 @@
 #define CELL_BTREE_H
 
 template <typename T>
-class BTree{
+class BinTree{
 public:
     virtual void insert(const T &) = 0;
     virtual void remove(const T &) = 0;
-
-
 };
 
 

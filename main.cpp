@@ -1,17 +1,17 @@
 #include <iostream>
-#include "BSTree.h"
-
+#include "STL/SimpleVector.h"
 using  namespace std;
 
 int main() {
 
-    BSTree<int> bsTree{8,6,9,5,7,3};
+    SimpleVector<int> V;
+    V.push_back(8);
+    V.push_back(5);
+    V.push_back(6);
+    V.push_back(2);
 
-    cout << bsTree.size();
-    bsTree.preOrder();
-
-    bsTree.remove(5);
-    cout << bsTree.size();
-    bsTree.preOrder();
+    for(auto it = V.begin(); it != V.end(); it++){
+        cout << *it << " \n";
+    }
     return 0;
 }

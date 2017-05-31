@@ -13,7 +13,7 @@ public:
     template <typename F, typename... Args>
     void Runtime(const F f, const Args&... args);
 
-    void Error();
+    void Error(const std::string s);
 };
 
 template<typename F, typename... Args>
@@ -24,5 +24,11 @@ void Utils::Runtime(const F f, const Args &... args) {
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count() / 1000;
     std::cout << "RunTime: " << duration << " ms"<< std::endl;
 }
+
+void Utils::Error(const std::string s) {
+
+}
+
+
 
 #endif //CELL_UTILS_H

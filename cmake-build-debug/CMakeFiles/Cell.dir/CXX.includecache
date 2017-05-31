@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/root/ClionProjects/Cell/STL/SimpleVector.h
+memory
+-
+
+C:/Users/root/ClionProjects/Cell/main.cpp
+iostream
+-
+STL/SimpleVector.h
+C:/Users/root/ClionProjects/Cell/STL/SimpleVector.h
+

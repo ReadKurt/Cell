@@ -6,11 +6,11 @@
 #define CELL_BSTREE_H
 
 #include <iostream>
-#include "BTree.h"
+#include "BinTree.h"
 
 
 template <typename T>
-class BSTree : public BTree<T>{
+class BSTree : public BinTree<T>{
 public:
 
     struct Node{
@@ -21,9 +21,8 @@ public:
     typedef Node* Tree;
 
 public:
-    BSTree<T>(const std::initializer_list<T> &list){
-        root = nullptr;
-        _size = 0;
+    BSTree<T>(const std::initializer_list<T> &list):root(nullptr), _size(0){
+
         for(auto &i: list){
             insert(i);
         }
@@ -66,7 +65,7 @@ typename BSTree<T>::Tree BSTree<T>::treeinsert(BSTree<T>::Tree tree, const T &v)
         tree->right =  treeinsert(tree->right,v);
 
     }else{
-        std::cout << v << "has exist!\n";
+        std::cout << v << " has existed!\n";
     }
 
     return tree;
