@@ -100,6 +100,8 @@ int main() {
     for (int i = 0; i < threads.size(); i++) {
         threads[i].join();
     }
+
+    cout << "crash" ;
     cout << result << endl;
     return 0;
 }
